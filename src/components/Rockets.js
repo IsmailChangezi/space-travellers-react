@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { fetchRocketData } from "../redux/rocket/rocketSlice";
 
 export default function Rockets() {
-  const { data, loading, error } = useSelector((state) => state);
+  const { data, loading, error } = useSelector((state) => state.rockets);
   const dispatch = useDispatch();
 
   useEffect(() => {
