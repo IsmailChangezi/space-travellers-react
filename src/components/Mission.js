@@ -1,9 +1,17 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
+import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
+import { updateMission } from '../redux/missions/missions';
 
 const Mission = (props) => {
-  const { name, description } = props;
+  const {
+    id, name, description, isReserved,
+  } = props;
+  const dispatch = useDispatch();
+  const handleJoining = () => {
+    dispatch(updateMission(id));
+  };
+
   return (
     <>
       <tr>
@@ -11,16 +19,33 @@ const Mission = (props) => {
         <td>
           {description}
         </td>
-        <td className="button-status"><button type="button" className="status">NOT A MEMBER</button></td>
-        <td className="button-join"><button type="button" className="join">Join Mission</button></td>
+        <td className="button-status">
+          <div
+            className={isReserved ? 'active-button' : 'status'}
+          >
+            {isReserved ? 'Active Member' : 'NOT A MEMBER'}
+          </div>
+        </td>
+        <td className="button-join">
+          <button
+            type="button"
+            className={isReserved ? 'leave' : 'join'}
+            onClick={handleJoining}
+          >
+            {isReserved ? 'Leave Mission' : 'Join Mission'}
+          </button>
+
+        </td>
       </tr>
     </>
   );
 };
 
 Mission.propTypes = {
+  id: PropTypes.number.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  isReserved: PropTypes.bool.isRequired,
 };
 
 export default Mission;
