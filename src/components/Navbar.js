@@ -1,25 +1,29 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
-import planet from '../assests/icons_files/planet.png';
+import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   return (
-    <header>
-      <nav className="nav--bar">
-        <img src={planet} alt="planet" id="planet-icon" />
-        <h2 id="nav-header">Space travelers&apos; Hub</h2>
-        <ul className="nav--list">
-          <li>
-            <NavLink to="/" className={({ isActive }) => (isActive ? 'active' : 'link')}>Rockets</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Missions" className={({ isActive }) => (isActive ? 'active' : 'link')}>Missions</NavLink>
-          </li>
-          <li>
-            <NavLink to="/Profile" className={({ isActive }) => (isActive ? 'active' : 'link')}>Profiles</NavLink>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <>
+      <header>
+        <Link to="/">
+          <h3>Space Traveller&#39;s Hub</h3>
+        </Link>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Rockets</Link>
+            </li>
+            <li>
+              <Link to="/Profile">Profiles</Link>
+            </li>
+            <li>
+              <Link to="/Missions">Missions</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <hr />
+    </>
+
   );
 }
