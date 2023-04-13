@@ -39,7 +39,6 @@ const rocketSlice = createSlice({
       .addCase(fetchRocketData.fulfilled, (state, action) => {
         /* eslint no-param-reassign: "error" */
         state.data = action.payload;
-        console.log(action.payload);
         state.error = null;
         state.loading = false;
       });
