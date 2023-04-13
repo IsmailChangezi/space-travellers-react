@@ -72,3 +72,45 @@ button {
   border: none;
   border-radius: 3%;
 }
+
+.table-container {
+  width: 95%;
+  margin-inline: auto;
+}
+
+.main-table {
+  border: 2px solid #e7e7e7;
+  border-collapse: collapse;
+}
+
+.main-table td,
+.main-table th {
+  border: 2px solid #dfdfdf;
+}
+
+.button-status,
+.button-join {
+  width: 8em;
+}
+
+.status {
+  background-color: #727272;
+  border: none;
+  border-radius: 3px;
+  padding: 0.15em 0.45em;
+  color: #fff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 32%;
+}
+
+.join {
+  border: 1px solid #292828;
+  border-radius: 5px;
+  color: #292828;
+  padding: 0.4em;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 25%;
+}
