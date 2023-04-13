@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import Missions from './components/Missions';
+import Missions from './pages/Missions';
 import Profile from './components/Profile';
 import Rockets from './components/Rockets';
 import Navbar from './components/Navbar';
