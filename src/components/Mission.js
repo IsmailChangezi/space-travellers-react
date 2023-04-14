@@ -16,13 +16,9 @@ const Mission = (props) => {
     <>
       <tr>
         <td>{name}</td>
-        <td>
-          {description}
-        </td>
+        <td>{description}</td>
         <td className="button-status">
-          <div
-            className={isReserved ? 'active-button' : 'status'}
-          >
+          <div className={isReserved ? 'active-button' : 'status'}>
             {isReserved ? 'Active Member' : 'NOT A MEMBER'}
           </div>
         </td>
@@ -34,7 +30,6 @@ const Mission = (props) => {
           >
             {isReserved ? 'Leave Mission' : 'Join Mission'}
           </button>
-
         </td>
       </tr>
     </>
