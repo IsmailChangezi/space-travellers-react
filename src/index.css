@@ -106,10 +106,23 @@ button {
 }
 
 .join {
+  display: block;
   border: 1px solid #292828;
   border-radius: 5px;
   color: #292828;
-  padding: 0.4em;
+  padding: 0.2em;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 25%;
+  width: 120px;
+}
+
+.leave {
+  display: inline-block;
+  border: 1px solid #bc0606;
+  border-radius: 5px;
+  color: #bc0606;
+  padding: 0.2em;
   text-transform: capitalize;
   cursor: pointer;
   margin-top: 25%;
