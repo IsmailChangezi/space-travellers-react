@@ -44,7 +44,7 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [Live Demo Link](https://space-travlers-hub.onrender.com)
+- ...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,7 +80,7 @@ Clone this repository using the GitHub link provided below.
 In the terminal, go to your file directory and run this command.
 
 ```
-$ git clone https://github.com/AmanWorku/Space-Travelers-Hub.git
+$ git clone https://github.com/IsmailChangezi/space-travellers-react.git
 ```
 
 
