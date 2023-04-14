@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 /* eslint-disable-next-line */
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import { useDispatch, useSelector } from 'react-redux';
 /* eslint-disable-next-line */
-import Table from 'react-bootstrap/Table';
+import Table from "react-bootstrap/Table";
 import Mission from '../components/Mission';
 import { retriveMissions } from '../redux/missions/missions';
 
@@ -13,7 +13,6 @@ function Missions() {
     dispatch(retriveMissions());
   }, [dispatch]);
   const missions = useSelector((state) => state.missionsReducer);
-
   const renderMissions = (missionsData) => missionsData.map((mission) => (
     <Mission
       id={mission.id}
@@ -34,9 +33,7 @@ function Missions() {
             <th> </th>
           </tr>
         </thead>
-        <tbody>
-          {renderMissions(missions)}
-        </tbody>
+        <tbody>{renderMissions(missions)}</tbody>
       </Table>
     </div>
   );
