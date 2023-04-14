@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  max-width: 100%;
+  margin: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+.logo {
+  width: 70px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+hr {
+  margin-bottom: 15px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 16px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.rocket-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.img-div img {
+  width: 350px;
+  border-radius: 3%;
+}
+
+.info-div {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+h2,
+p,
+button {
+  margin: 0.3rem;
+}
+
+.rocket-btn {
+  width: 120px;
+  padding: 0.3rem;
+  text-align: center;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3%;
+}
+
+.table-container {
+  width: 95%;
+  margin-inline: auto;
+}
+
+.main-table {
+  border: 2px solid #e7e7e7;
+  border-collapse: collapse;
+}
+
+.main-table td,
+.main-table th {
+  border: 2px solid #dfdfdf;
+}
+
+.button-status,
+.button-join {
+  width: 8em;
+}
+
+.status {
+  background-color: #727272;
+  border: none;
+  border-radius: 3px;
+  padding: 0.15em 0.45em;
+  color: #fff;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 32%;
+}
+
+.join {
+  display: block;
+  border: 1px solid #292828;
+  border-radius: 5px;
+  color: #292828;
+  padding: 0.2em;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 25%;
+  width: 120px;
+}
+
+.leave {
+  display: inline-block;
+  border: 1px solid #bc0606;
+  border-radius: 5px;
+  color: #bc0606;
+  padding: 0.2em;
+  text-transform: capitalize;
+  cursor: pointer;
+  margin-top: 25%;
+}
+
+.rocket-list {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.rocket-list .rocket {
+  display: flex;
+  gap: 1rem;
+}
+
+.rocket-list .rocket img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.rocket-list .rocket-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+}
