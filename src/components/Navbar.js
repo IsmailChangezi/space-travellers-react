@@ -14,10 +14,10 @@ export default function Navbar() {
               <Link to="/">Rockets</Link>
             </li>
             <li>
-              <Link to="/Profile">Profiles</Link>
+              <Link to="/Missions">Missions</Link>
             </li>
             <li>
-              <Link to="/Missions">Missions</Link>
+              <Link to="/Profile">Profiles</Link>
             </li>
           </ul>
         </nav>

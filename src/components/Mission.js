@@ -37,7 +37,7 @@ const Mission = (props) => {
 };
 
 Mission.propTypes = {
-  id: PropTypes.number.isRequired,
+  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   isReserved: PropTypes.bool.isRequired,
