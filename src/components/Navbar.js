@@ -1,6 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import planet from "../assests/icons_files/planet.png";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import planet from '../assests/icons_files/planet.png';
+
 export default function Navbar() {
   return (
     <>
