@@ -133,7 +133,6 @@ $ npm run deploy
 - GitHub: [@IsmailChangezi](https://github.com/IsmailChangezi)
 - LinkedIn: [@IsmailChangezi](https://www.linkedin.com/in/ismail-changezi-34a138215/)
 
-LinkedIn: LinkedIn
 
 👤 **Omar Farouq**
 
