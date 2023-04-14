@@ -152,3 +152,8 @@ button {
   gap: 1rem;
   align-items: flex-start;
 }
+
+.profile-page {
+  display: flex;
+  justify-content: center;
+}
